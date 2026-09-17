@@ -1,0 +1,765 @@
+<!doctype html>
+<html lang="lo" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yeng Academy | ສູນການຮຽນຮູ້ Software Development & DevOps</title>
+    <meta
+      name="description"
+      content="Yeng Academy - ສູນການຮຽນຮູ້ Software Development, DevOps, Web Security & Vibe Coding. ຮຽນ 1 ຕໍ່ 1, Basic Coding ແລະ ສ້າງໂປຣເຈັກຈິງ."
+    />
+
+    <!-- Google Fonts: Noto Sans Lao Looped -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao+Looped:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- External Tailwind Config (White-Blue Theme) -->
+    <script src="tailwind.config.js"></script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+      body {
+        font-family: "Noto Sans Lao Looped", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body
+    class="bg-slate-50 text-slate-900 antialiased selection:bg-blue-100 selection:text-blue-900"
+  >
+    <!-- Navigation -->
+    <header
+      class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200"
+    >
+      <div
+        class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between"
+      >
+        <!-- Logo -->
+        <a
+          href="index.html"
+          class="flex items-center gap-2.5 font-bold text-xl tracking-tight text-slate-900 hover:text-blue-600 transition"
+        >
+          <div
+            class="w-9 h-9 rounded-lg bg-blue-600 text-white flex items-center justify-center font-extrabold text-lg shadow-sm"
+          >
+            Y
+          </div>
+          <span>Yeng Academy</span>
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav
+          class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-600"
+        >
+          <a href="#about" class="hover:text-blue-600 transition">ກ່ຽວກັບ</a>
+          <a href="#portfolio" class="hover:text-blue-600 transition">ຜົນງານ</a>
+          <a
+            href="courses.html"
+            class="hover:text-blue-600 transition flex items-center gap-1.5 text-blue-600 font-semibold"
+          >
+            <span>ຫຼັກສູດ & Workshop</span>
+          </a>
+          <a href="#location" class="hover:text-blue-600 transition"
+            >ສະຖານທີ່</a
+          >
+          <a href="#contact" class="hover:text-blue-600 transition">ຕິດຕໍ່</a>
+        </nav>
+
+        <!-- Action Button -->
+        <div class="flex items-center gap-3">
+          <a
+            href="courses.html"
+            class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-blue-600 text-white text-sm font-medium hover:bg-blue-700 shadow-sm transition"
+          >
+            <span>ເບິ່ງຫຼັກສູດ</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      id="about"
+      class="py-14 sm:py-20 border-b border-slate-200 bg-white"
+    >
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center"
+        >
+          <!-- Left Column: Bio & Intro -->
+          <div class="lg:col-span-7 space-y-6">
+            <div
+              class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-blue-800 text-xs font-semibold"
+            >
+              <span
+                class="w-2 h-2 rounded-full bg-blue-600 animate-pulse"
+              ></span>
+              <span>ສູນການຮຽນຮູ້ & ທີ່ປຶກສາດ້ານການຂຽນໂປຣແກຣມ</span>
+            </div>
+
+            <h1
+              class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-950 tracking-tight leading-tight"
+            >
+              ຍິນດີຕ້ອນຮັບສູ່ <span class="text-blue-600">Yeng Academy</span>
+            </h1>
+
+            <!-- Highlight Bio -->
+            <div
+              class="space-y-3 py-1 text-base sm:text-lg text-slate-700 leading-relaxed font-normal"
+            >
+              <p class="flex items-start gap-2.5">
+                <i
+                  data-lucide="check-circle-2"
+                  class="w-5 h-5 text-blue-600 mt-1 shrink-0"
+                ></i>
+                <span
+                  ><strong
+                    >ສອນ Software Development, DevOps, Web Security & Vibe
+                    Coding</strong
+                  ></span
+                >
+              </p>
+              <p class="flex items-start gap-2.5">
+                <i
+                  data-lucide="check-circle-2"
+                  class="w-5 h-5 text-blue-600 mt-1 shrink-0"
+                ></i>
+                <span
+                  ><strong
+                    >ຮຽນ 1 ຕໍ່ 1 | Basic Coding | ສ້າງໂປຣເຈັກຈິງ</strong
+                  ></span
+                >
+              </p>
+              <p
+                class="flex items-start gap-2.5 text-blue-700 font-semibold text-lg sm:text-xl"
+              >
+                <span class="shrink-0">🌱</span>
+                <span>ຮຽນຮູ້ • ລົງມືສ້າງ • ເຕີບໃຫຍ່</span>
+              </p>
+            </div>
+
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+              ສູນການຮຽນຮູ້ ແລະ ພັດທະນາທັກສະດ້ານເທັກໂນໂລຢີແບບເນັ້ນປະຕິບັດຕົວຈິງ.
+              ບໍ່ວ່າທ່ານຈະເລີ່ມຕົ້ນຈາກສູນ ຫຼື ຕ້ອງການຍົກລະດັບທັກສະສູ່ມືອາຊີບ,
+              ພວກເຮົາມີຫຼັກສູດ 1 ຕໍ່ 1 ພ້ອມ Workshop ທີ່ຕອບໂຈດວຽກງານຕົວຈິງ.
+            </p>
+
+            <!-- Buttons -->
+            <div class="flex flex-wrap items-center gap-3 pt-2">
+              <a
+                href="courses.html"
+                class="px-5 py-2.5 rounded-lg bg-blue-600 text-white font-semibold text-sm sm:text-base hover:bg-blue-700 transition shadow-sm flex items-center gap-2"
+              >
+                <i data-lucide="book-open" class="w-4 h-4"></i>
+                <span>ເບິ່ງຫຼັກສູດ & Workshop ທັງໝົດ</span>
+              </a>
+              <a
+                href="#contact"
+                class="px-5 py-2.5 rounded-lg border border-slate-300 bg-white text-slate-800 font-semibold text-sm sm:text-base hover:bg-slate-100 transition flex items-center gap-2"
+              >
+                <i data-lucide="message-circle" class="w-4 h-4"></i>
+                <span>ຕິດຕໍ່ປຶກສາ / ລົງທະບຽນ</span>
+              </a>
+            </div>
+
+            <!-- Quick Stats / Badges -->
+            <div
+              class="pt-6 grid grid-cols-3 gap-4 border-t border-slate-100 text-center sm:text-left"
+            >
+              <div>
+                <p class="text-2xl font-bold text-slate-900">1 ຕໍ່ 1</p>
+                <p class="text-xs text-slate-500 font-medium">ຮຽນແບບໃກ້ຊິດ</p>
+              </div>
+              <div>
+                <p class="text-2xl font-bold text-slate-900">100%</p>
+                <p class="text-xs text-slate-500 font-medium">
+                  ເນັ້ນລົງມືເຮັດໂປຣເຈັກ
+                </p>
+              </div>
+              <div>
+                <p class="text-2xl font-bold text-slate-900">ທັນສະໄໝ</p>
+                <p class="text-xs text-slate-500 font-medium">
+                  ເທັກໂນໂລຢີ & ເຄື່ອງມື AI
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Profile Card -->
+          <div class="lg:col-span-5 flex justify-center">
+            <div
+              class="w-full max-w-sm bg-white rounded-2xl border border-slate-200 shadow-sm p-6 text-center"
+            >
+              <div class="relative w-40 h-40 mx-auto mb-4">
+                <img
+                  src="public/profile.png"
+                  alt="Kayeng Xiong Profile"
+                  class="w-full h-full object-cover rounded-full border-4 border-blue-50 shadow-md"
+                  onerror="
+                    this.onerror = null;
+                    this.src =
+                      'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&auto=format&fit=crop&q=80';
+                  "
+                />
+                <span
+                  class="absolute bottom-2 right-2 w-5 h-5 bg-blue-600 border-2 border-white rounded-full"
+                  title="Active Instructor"
+                ></span>
+              </div>
+
+              <h2 class="text-xl font-bold text-slate-900">Kayeng Xiong</h2>
+              <p class="text-sm text-blue-600 font-semibold mb-3">
+                ຜູ້ສອນ & ຜູ້ພັດທະນາລະບົບ
+              </p>
+
+              <p class="text-xs text-slate-600 mb-5 leading-relaxed">
+                ຜູ້ກໍ່ຕັ້ງ Yeng Academy •
+                ມຸ່ງໝັ້ນຖ່າຍທອດຄວາມຮູ້ດ້ານການຂຽນໂປຣແກຣມ, DevOps ແລະ
+                ຄວາມປອດໄພຂອງເວັບໄຊ ໃຫ້ເຂົ້າໃຈງ່າຍ ແລະ ນຳໃຊ້ໄດ້ຈິງ.
+              </p>
+
+              <div class="flex items-center justify-center gap-3">
+                <a
+                  href="#contact"
+                  class="flex-1 inline-flex items-center justify-center gap-2 py-2 px-3 rounded-lg bg-blue-600 text-xs font-semibold text-white hover:bg-blue-700 transition"
+                >
+                  <i data-lucide="message-square" class="w-4 h-4"></i>
+                  <span>ຕິດຕໍ່ສອບຖາມ</span>
+                </a>
+                <a
+                  href="#location"
+                  class="flex-1 inline-flex items-center justify-center gap-2 py-2 px-3 rounded-lg border border-slate-300 text-xs font-semibold text-slate-800 hover:bg-slate-100 transition"
+                >
+                  <i data-lucide="map-pin" class="w-4 h-4"></i>
+                  <span>ສະຖານທີ່ສູນ</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Topics / What We Teach -->
+    <section class="py-16 bg-slate-50 border-b border-slate-200">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <h2
+            class="text-xs font-bold text-blue-600 uppercase tracking-wider mb-2"
+          >
+            ສິ່ງທີ່ເຮົາສອນ
+          </h2>
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900">
+            4 ເສົາຫຼັກຄວາມຮູ້ທີ່ Yeng Academy
+          </h3>
+          <p class="text-slate-600 text-sm mt-2">
+            ເນັ້ນທັກສະທີ່ຕະຫຼາດຕ້ອງການຈິງ ພ້ອມເຄື່ອງມືທີ່ທັນສະໄໝ
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Card 1 -->
+          <div
+            class="bg-white p-6 rounded-xl border border-slate-200 hover:border-blue-400 transition shadow-sm space-y-3"
+          >
+            <div
+              class="w-10 h-10 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center font-bold"
+            >
+              <i data-lucide="code" class="w-5 h-5"></i>
+            </div>
+            <h4 class="font-bold text-slate-900 text-base">
+              Software Development
+            </h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              ປູພື້ນຖານການຂຽນໂຄ້ດ, ການພັດທະນາ Web Application, Frontend &
+              Backend, REST APIs ແລະ ການອອກແບບໂຄງສ້າງລະບົບ.
+            </p>
+            <ul class="text-xs text-slate-500 space-y-1 pt-1 font-medium">
+              <li>• JavaScript / TypeScript</li>
+              <li>• Python / Go / Frameworks</li>
+              <li>• ຖານຂໍ້ມູນ & ການອອກແບບ API</li>
+            </ul>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="bg-white p-6 rounded-xl border border-slate-200 hover:border-blue-400 transition shadow-sm space-y-3"
+          >
+            <div
+              class="w-10 h-10 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center font-bold"
+            >
+              <i data-lucide="server" class="w-5 h-5"></i>
+            </div>
+            <h4 class="font-bold text-slate-900 text-base">DevOps & Cloud</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              ຂະບວນການນຳສົ່ງລະບົບຂຶ້ນເຊີເວີ, Containerization, ການສ້າງ CI/CD
+              Pipeline ແລະ ການຈັດການ Linux Server.
+            </p>
+            <ul class="text-xs text-slate-500 space-y-1 pt-1 font-medium">
+              <li>• Docker & Containers</li>
+              <li>• CI/CD Pipelines</li>
+              <li>• ການຕັ້ງຄ່າ Linux Server</li>
+            </ul>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="bg-white p-6 rounded-xl border border-slate-200 hover:border-blue-400 transition shadow-sm space-y-3"
+          >
+            <div
+              class="w-10 h-10 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center font-bold"
+            >
+              <i data-lucide="shield-check" class="w-5 h-5"></i>
+            </div>
+            <h4 class="font-bold text-slate-900 text-base">Web Security</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              ຫຼັກການຮັກສາຄວາມປອດໄພຂອງ Web App, ມາດຕະຖານ OWASP Top 10,
+              ການຢືນຢັນຕົວຕົນ ແລະ ການຂຽນໂຄ້ດໃຫ້ປອດໄພ.
+            </p>
+            <ul class="text-xs text-slate-500 space-y-1 pt-1 font-medium">
+              <li>• ມາດຕະຖານຄວາມປອດໄພ OWASP</li>
+              <li>• Authentication & Authorization</li>
+              <li>• ການປ້ອງກັນຊ່ອງໂຫວ່ຂອງລະບົບ</li>
+            </ul>
+          </div>
+
+          <!-- Card 4 -->
+          <div
+            class="bg-white p-6 rounded-xl border border-slate-200 hover:border-blue-400 transition shadow-sm space-y-3"
+          >
+            <div
+              class="w-10 h-10 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center font-bold"
+            >
+              <i data-lucide="sparkles" class="w-5 h-5"></i>
+            </div>
+            <h4 class="font-bold text-slate-900 text-base">Vibe Coding</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              ການຂຽນໂຄ້ດຍຸກໃໝ່ດ້ວຍ AI, ການສ້າງຕົ້ນແບບຢ່າງວ່ອງໄວ, ການສັ່ງງານ AI
+              ຢ່າງຖືກຕ້ອງ ແລະ ການສ້າງ Product ໃຫ້ໄວຂຶ້ນ.
+            </p>
+            <ul class="text-xs text-slate-500 space-y-1 pt-1 font-medium">
+              <li>• ເຄື່ອງມື AI ຊ່ວຍຂຽນໂຄ້ດ</li>
+              <li>• ການສ້າງ MVP ຢ່າງວ່ອງໄວ</li>
+              <li>• ເພີ່ມປະສິດທິພາບການເຮັດວຽກ</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio / Experience Section -->
+    <section id="portfolio" class="py-16 bg-white border-b border-slate-200">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="flex flex-col md:flex-row md:items-end justify-between mb-10"
+        >
+          <div>
+            <h2
+              class="text-xs font-bold text-blue-600 uppercase tracking-wider mb-1"
+            >
+              ຜົນງານ & ໂປຣເຈັກ
+            </h2>
+            <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900">
+              ປະສົບການ ແລະ ໂປຣເຈັກຕົວຢ່າງ
+            </h3>
+          </div>
+          <p class="mt-2 md:mt-0 text-xs text-slate-500 font-medium">
+            ຕົວຢ່າງໂຄງການທີ່ນຳໃຊ້ໃນການສອນ ແລະ ພັດທະນາຕົວຈິງ
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Project 1 -->
+          <div
+            class="rounded-xl border border-slate-200 p-6 bg-slate-50 hover:bg-white hover:border-blue-400 hover:shadow-sm transition"
+          >
+            <div class="flex items-center justify-between mb-3">
+              <span
+                class="text-xs font-semibold px-2.5 py-0.5 rounded bg-blue-100 text-blue-800"
+                >Software & Web</span
+              >
+              <div class="w-2 h-2 rounded-full bg-blue-500"></div>
+            </div>
+            <h4 class="font-bold text-slate-900 text-base mb-2">
+              ການພັດທະນາ Full-Stack Web Application
+            </h4>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              ການພັດທະນາລະບົບເວັບແອັບພລິເຄຊັນຂະໜາດເຕັມຮູບແບບ, ລະບົບ REST APIs,
+              ລະບົບຈັດການຜູ້ໃຊ້ ແລະ ໜ້າຕາທີ່ຮອງຮັບທຸກອຸປະກອນ.
+            </p>
+            <div
+              class="flex flex-wrap gap-1.5 text-[11px] text-slate-600 font-medium"
+            >
+              <span class="px-2 py-0.5 bg-white border border-slate-200 rounded"
+                >Full-Stack</span
+              >
+              <span class="px-2 py-0.5 bg-white border border-slate-200 rounded"
+                >API</span
+              >
+              <span class="px-2 py-0.5 bg-white border border-slate-200 rounded"
+                >Database</span
+              >
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div
+            class="rounded-xl border border-slate-200 p-6 bg-slate-50 hover:bg-white hover:border-blue-400 hover:shadow-sm transition"
+          >
+            <div class="flex items-center justify-between mb-3">
+              <span
+                class="text-xs font-semibold px-2.5 py-0.5 rounded bg-sky-100 text-sky-800"
+                >DevOps & Cloud</span
+              >
+              <div class="w-2 h-2 rounded-full bg-sky-500"></div>
+            </div>
+            <h4 class="font-bold text-slate-900 text-base mb-2">
+              ການວາງລະບົບ CI/CD & Server Infrastructure
+            </h4>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              ການວາງລະບົບອັດຕະໂນມັດສຳລັບການ Deploy ໂປຣເຈັກ, ການໃຊ້ Docker,
+              ການດູແລຮັກສາເຊີເວີ Linux ແລະ ການຕິດຕາມລະບົບ.
+            </p>
+            <div
+              class="flex flex-wrap gap-1.5 text-[11px] text-slate-600 font-medium"
+            >
+              <span class="px-2 py-0.5 bg-white border border-slate-200 rounded"
+                >Docker</span
+              >
+              <span class="px-2 py-0.5 bg-white border border-slate-200 rounded"
+                >Linux</span
+              >
+              <span class="px-2 py-0.5 bg-white border border-slate-200 rounded"
+                >CI/CD</span
+              >
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div
+            class="rounded-xl border border-slate-200 p-6 bg-slate-50 hover:bg-white hover:border-blue-400 hover:shadow-sm transition"
+          >
+            <div class="flex items-center justify-between mb-3">
+              <span
+                class="text-xs font-semibold px-2.5 py-0.5 rounded bg-indigo-100 text-indigo-800"
+                >AI & Vibe Coding</span
+              >
+              <div class="w-2 h-2 rounded-full bg-indigo-500"></div>
+            </div>
+            <h4 class="font-bold text-slate-900 text-base mb-2">
+              ການສ້າງ Product ຢ່າງວ່ອງໄວດ້ວຍ AI
+            </h4>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              ການນຳໃຊ້ AI ເພື່ອສ້າງຕົ້ນແບບລະບົບຢ່າງວ່ອງໄວ, ການປັບປຸງໂຄງສ້າງໂຄ້ດ
+              ແລະ ການສ້າງຕົວຢ່າງໂປຣເຈັກສຳລັບຜູ້ຮຽນ.
+            </p>
+            <div
+              class="flex flex-wrap gap-1.5 text-[11px] text-slate-600 font-medium"
+            >
+              <span class="px-2 py-0.5 bg-white border border-slate-200 rounded"
+                >AI Assisted</span
+              >
+              <span class="px-2 py-0.5 bg-white border border-slate-200 rounded"
+                >Productivity</span
+              >
+              <span class="px-2 py-0.5 bg-white border border-slate-200 rounded"
+                >MVP</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses & Workshops Quick Preview -->
+    <section class="py-16 bg-slate-50 border-b border-slate-200">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="bg-blue-600 rounded-2xl p-8 sm:p-12 text-white shadow-sm flex flex-col md:flex-row items-center justify-between gap-8"
+        >
+          <div class="space-y-3 max-w-xl">
+            <span
+              class="inline-block px-3 py-1 rounded bg-blue-700 text-xs font-semibold text-blue-100"
+            >
+              ລາຍການຫຼັກສູດ & Workshop
+            </span>
+            <h3 class="text-2xl sm:text-3xl font-extrabold leading-snug">
+              ຕ້ອງການຮຽນແບບ 1 ຕໍ່ 1 ຫຼື ເຂົ້າຮ່ວມ Workshop?
+            </h3>
+            <p class="text-sm text-blue-100/90 leading-relaxed">
+              ພວກເຮົາມີໜ້າລາຍການຫຼັກສູດ ແລະ ຫົວຂໍ້ Workshop ທີ່ກຳລັງເປີດສອນ
+              ພ້ອມລາຍລະອຽດເນື້ອຫາທີ່ທ່ານສາມາດເລືອກຮຽນຕາມເປົ້າໝາຍ.
+            </p>
+          </div>
+          <div class="shrink-0 w-full md:w-auto">
+            <a
+              href="courses.html"
+              class="w-full md:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg bg-white text-blue-900 font-bold text-sm sm:text-base hover:bg-blue-50 transition shadow"
+            >
+              <span>ເຂົ້າເບິ່ງລາຍການຫຼັກສູດທັງໝົດ</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Central Location Section -->
+    <section id="location" class="py-16 bg-white border-b border-slate-200">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <h2
+            class="text-xs font-bold text-blue-600 uppercase tracking-wider mb-2"
+          >
+            ສະຖານທີ່ສູນ
+          </h2>
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900">
+            ສະຖານທີ່ຕັ້ງ ແລະ ຮູບແບບການຮຽນ
+          </h3>
+          <p class="text-slate-600 text-sm mt-2">
+            ຮອງຮັບທັງການຮຽນແບບຢູ່ສູນ ແລະ ຮຽນອອນລາຍ 1 ຕໍ່ 1
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+          <!-- Location Details Card -->
+          <div
+            class="bg-slate-50 p-6 sm:p-8 rounded-2xl border border-slate-200 flex flex-col justify-between"
+          >
+            <div class="space-y-5">
+              <div class="flex items-center gap-3">
+                <div
+                  class="w-10 h-10 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center font-bold"
+                >
+                  <i data-lucide="map-pin" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-slate-900 text-lg">
+                    ສູນການຮຽນຮູ້ Yeng Academy
+                  </h4>
+                  <p class="text-xs text-slate-500">
+                    ສະຖານທີ່ຝຶກອົບຮົມ ແລະ ຮຽນຮູ້
+                  </p>
+                </div>
+              </div>
+
+              <div class="space-y-3 text-sm text-slate-700">
+                <div class="flex items-start gap-3">
+                  <i
+                    data-lucide="building"
+                    class="w-4 h-4 text-slate-500 mt-1 shrink-0"
+                  ></i>
+                  <div>
+                    <p class="font-semibold text-slate-900">ທີ່ຢູ່ສູນ:</p>
+                    <p class="text-slate-400 text-xs mt-0.5">
+                      ບ້ານ ນາທົ່ມ, ເມືອງ ໄຊທານີ, ນະຄອນຫຼວງວຽງຈັນ
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                  <i
+                    data-lucide="clock"
+                    class="w-4 h-4 text-slate-500 mt-1 shrink-0"
+                  ></i>
+                  <div>
+                    <p class="font-semibold text-slate-900">ເວລາເປີດສອນ:</p>
+                    <p class="text-slate-600 text-xs mt-0.5">
+                      ຈັນ - ອາທິດ | ນັດໝາຍຕາມເວລາສະດວກຂອງຜູ້ຮຽນ
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                  <i
+                    data-lucide="laptop"
+                    class="w-4 h-4 text-slate-500 mt-1 shrink-0"
+                  ></i>
+                  <div>
+                    <p class="font-semibold text-slate-900">ຮູບແບບການຮຽນ:</p>
+                    <p class="text-slate-600 text-xs mt-0.5">
+                      1. ຮຽນຢູ່ສູນແບບ 1 ຕໍ່ 1 ແລະ Workshop ກຸ່ມນ້ອຍ
+                    </p>
+                    <p class="text-slate-600 text-xs">
+                      2. ຮຽນອອນລາຍ 1 ຕໍ່ 1 ພ້ອມບັນທຶກວິດີໂອໄວ້ເບິ່ງຍ້ອນຫຼັງ
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-6 border-t border-slate-200 mt-6">
+              <a
+                href="#contact"
+                class="inline-flex items-center gap-2 text-xs font-bold text-blue-600 hover:text-blue-700"
+              >
+                <span>ສອບຖາມເສັ້ນທາງ ແລະ ຈອງຮອບຮຽນ</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Facility Preview Card -->
+          <div
+            class="bg-slate-100 rounded-2xl border border-slate-200 p-6 sm:p-8 flex flex-col justify-center items-center text-center"
+          >
+            <div
+              class="w-14 h-14 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center mb-4"
+            >
+              <i data-lucide="navigation" class="w-7 h-7"></i>
+            </div>
+            <h4 class="font-bold text-slate-900 text-base mb-1">
+              ສະພາບແວດລ້ອມການຮຽນຮູ້
+            </h4>
+            <p class="text-xs text-slate-600 max-w-sm mb-5 leading-relaxed">
+              ຫ້ອງຮຽນທີ່ສະດວກສະບາຍ, ມີອຸປະກອນຮອງຮັບການສາທິດ, ອິນເຕີເນັດຄວາມໄວສູງ
+              ແລະ ບັນຍາກາດທີ່ເປັນກັນເອງ.
+            </p>
+            <div
+              class="w-full max-w-xs bg-white p-4 rounded-xl border border-slate-200 text-left text-xs space-y-2 text-slate-700"
+            >
+              <div class="flex items-center gap-2 text-blue-600 font-semibold">
+                <i data-lucide="check" class="w-4 h-4"></i>
+                <span>ອິນເຕີເນັດຄວາມໄວສູງ & ໂຕະເຮັດວຽກ</span>
+              </div>
+              <div class="flex items-center gap-2 text-blue-600 font-semibold">
+                <i data-lucide="check" class="w-4 h-4"></i>
+                <span>ພື້ນທີ່ຮຽນ ເໝາະສຳລັບ 12 ຄົນ</span>
+              </div>
+              <div class="flex items-center gap-2 text-blue-600 font-semibold">
+                <i data-lucide="check" class="w-4 h-4"></i>
+                <span>ຈໍສະແດງຜົນ ແລະ ອຸປະກອນ Workshop</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Registration Section -->
+    <section id="contact" class="py-16 bg-slate-50">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-xl mx-auto mb-12">
+          <h2
+            class="text-xs font-bold text-blue-600 uppercase tracking-wider mb-2"
+          >
+            ຕິດຕໍ່ພວກເຮົາ
+          </h2>
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900">
+            ພ້ອມເລີ່ມຕົ້ນຮຽນແລ້ວບໍ?
+          </h3>
+          <p class="text-slate-600 text-sm mt-2">
+            ຕິດຕໍ່ປຶກສາແຜນການຮຽນ ຫຼື ສອບຖາມຫຼັກສູດໄດ້ຟຣີ
+          </p>
+        </div>
+
+        <div class="max-w-3xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <!-- Contact Item 1: WhatsApp -->
+          <div
+            class="p-5 rounded-xl border border-slate-200 bg-white hover:border-blue-500 hover:shadow-sm transition flex items-center gap-4"
+          >
+            <div
+              class="w-12 h-12 rounded-lg bg-blue-600 text-white flex items-center justify-center shrink-0"
+            >
+              <i data-lucide="phone-call" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <p class="text-xs text-slate-500 font-medium">
+                WhatsApp / ໂທຕິດຕໍ່
+              </p>
+              <p class="text-sm font-bold text-slate-900">+856 20 2222 1371</p>
+            </div>
+          </div>
+
+          <!-- Contact Item 2: Telegram -->
+          <!-- <div
+            class="p-5 rounded-xl border border-slate-200 bg-white hover:border-blue-500 hover:shadow-sm transition flex items-center gap-4"
+          >
+            <div
+              class="w-12 h-12 rounded-lg bg-sky-500 text-white flex items-center justify-center shrink-0"
+            >
+              <i data-lucide="send" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <p class="text-xs text-slate-500 font-medium">Telegram</p>
+              <p class="text-sm font-bold text-slate-900">@kayengxiong</p>
+            </div>
+          </div> -->
+
+          <!-- Contact Item 3: Facebook -->
+          <div
+            class="p-5 rounded-xl border border-slate-200 bg-white hover:border-blue-500 hover:shadow-sm transition flex items-center gap-4"
+          >
+            <div
+              class="w-12 h-12 rounded-lg bg-blue-700 text-white flex items-center justify-center shrink-0"
+            >
+              <i data-lucide="message-square" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <p class="text-xs text-slate-500 font-medium">Facebook Page</p>
+              <p class="text-sm font-bold text-slate-900">Yeng Academy</p>
+            </div>
+          </div>
+
+          <!-- Contact Item 4: Location / In-person -->
+          <div
+            class="p-5 rounded-xl border border-slate-200 bg-white hover:border-blue-500 hover:shadow-sm transition flex items-center gap-4"
+          >
+            <div
+              class="w-12 h-12 rounded-lg bg-slate-800 text-white flex items-center justify-center shrink-0"
+            >
+              <i data-lucide="map-pin" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <p class="text-xs text-slate-500 font-medium">ສະຖານທີ່ສູນ</p>
+              <p class="text-sm font-bold text-slate-900">ນະຄອນຫຼວງວຽງຈັນ</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="bg-slate-900 text-slate-400 py-10 border-t border-slate-800 text-xs"
+    >
+      <div
+        class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4"
+      >
+        <div class="flex items-center gap-2">
+          <div
+            class="w-6 h-6 rounded bg-blue-600 text-white flex items-center justify-center font-bold text-xs"
+          >
+            Y
+          </div>
+          <span class="text-white font-semibold">Yeng Academy</span>
+          <span class="text-slate-500">• 🌱 ຮຽນຮູ້ • ລົງມືສ້າງ • ເຕີບໃຫຍ່</span>
+        </div>
+        <p>© 2026 Yeng Academy. ສະຫງວນລິຂະສິດ.</p>
+        <div class="flex items-center gap-4">
+          <a href="index.html" class="hover:text-white transition">ໜ້າຫຼັກ</a>
+          <a href="courses.html" class="hover:text-white transition"
+            >ຫຼັກສູດ & Workshop</a
+          >
+          <a href="#contact" class="hover:text-white transition"
+            >ຕິດຕໍ່ສອບຖາມ</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- Initialize Lucide icons -->
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
