@@ -1,8 +1,9 @@
 tailwind.config = {
+  darkMode: 'media',
   theme: {
     extend: {
       fontFamily: {
-        sans: ['"Noto Sans Lao Looped"', 'sans-serif'],
+        sans: ['"Noto Sans Lao"', '"Noto Sans Lao Looped"', 'Inter', 'sans-serif'],
       },
       colors: {
         brand: {
